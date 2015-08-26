@@ -1,0 +1,27 @@
+/***********************************************************************************************************************
+***************************************************MAIN CSS*************************************************************
+***********************************************************************************************************************/
+@font-face {
+    font-family: space;
+    src: url('../fonts/space%20age.otf');
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.navbar, .navbar a{
+    font-family: space;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #1A1A1A;
+}
+
