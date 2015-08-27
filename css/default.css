@@ -13,6 +13,10 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
 }
+.navbar{
+    background-color: transparent;
+    border: transparent;
+}
 .navbar, .navbar a{
     font-family: space;
 }
@@ -24,4 +28,85 @@ body {
     height: 60px;
     background-color: #1A1A1A;
 }
+/***********************************************************************************************************************
+************************************************MAIN CAROUSEL***********************************************************
+***********************************************************************************************************************/
+.carousel {
+    height: 760px;
+    margin-bottom: 60px;
+}
+.carousel-caption {
+    z-index: 10;
+}
+.carousel .item {
+    height: 760px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 760px;
+}
+.carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+/***********************************************************************************************************************
+***********************************************VIDEO CAROUSEL***********************************************************
+***********************************************************************************************************************/
+
+
+#vid-container{
+    padding:0px 0px 0px 0px !important;
+    margin:0px 0px 0px 0px !important;
+    width:100%;
+}
+.video-carousel{
+    /*background-color: #003BC4;*/
+    /*background: linear-gradient(to left, #637379, white, #637379);*/
+}
+.well{
+    margin-bottom: 0px !important;
+    padding: 0px !important;
+    border: none !important;
+}
+.carousel-inner.onebyone-carosel {
+    margin: auto;
+    width: 100%;
+}
+.onebyone-carosel .active.left {
+    left: -33.33%;
+}
+.onebyone-carosel .active.right {
+    left: 33.33%;
+}
+.onebyone-carosel .next {
+    left: 33.33%;
+}
+.onebyone-carosel .prev {
+    left: -33.33%;
+}
+/***********************************************************************************************************************
+**************************************************DESCRIPTORS***********************************************************
+***********************************************************************************************************************/
+
+
+/***********************************************************************************************************************
+****************************************************SIGNUP**************************************************************
+***********************************************************************************************************************/
+.signup-container{
+    background-image: url("../images/wave.jpg");
+    height: 700px;
+    width: auto;
+}
+.signup-image{
+    height: 600px;
+    width: 100%;
+}
+/*.email-form, .password-form{*/
+    /*position: absolute;*/
+/*}*/
 
