@@ -13,12 +13,12 @@
   <link href="css/default.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
-
-<body>
-
 <!---------------------------------NAVBAR BEGIN------------------------------------->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
+
+<body>
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -26,36 +26,114 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Smart-Auto</a>
+      <a class="navbar-brand" href="index.html"><span class="logo-span">Smart</span>-Auto</a>
     </div>
     <div id="navbar" class="collapse navbar-collapse pull-right">
       <ul class="nav navbar-nav navbar-collapse">
 
-
-        <li><a href="#" class="btn-link" data-toggle="modal" data-target="#myModal"><i class="fa fa-star fa-spin"></i> My Vehicles</a>
-        </li>
+        <li><a href="#" class="btn-link" data-toggle="modal" data-target="#myModal"><i class="fa fa-star fa-spin"></i> My Vehicles</a></li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog fa-spin"></i> Account<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">My Vehicles</a>
-            </li>
-            <li><a href="#">My Library</a>
-            </li>
-            <li><a href="#">My Watchlist</a>
-            </li>
+            <li><a href="account.html">My Account</a></li>
+            <li><a href="#" class="btn-link" data-toggle="modal" data-target="#myModal">My Vehicles</a></li>
+            <li><a href="#">My Library</a></li>
+            <li><a href="#">My Watchlist</a></li>
             <li role="separator" class="divider"></li>
             <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a>
-            </li>
-            <li><a href="#">One more separated link</a>
-            </li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<!---------------------------MY VEHICLES BEGIN------------------------>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 pull-right" id="manage-vehicles">
+      <!------------------------MY VEHICLE WINDOW BEGIN------------------------->
+      <div id="myModal" class="modal fade" role="form" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-body">
+          <div class="modal-content container-fluid">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Select Vehicle</h4>
+            </div>
+
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <!--------------------------BREADCRUMB BEGIN------------------------->
+                  <ul class="btn-group btn-breadcrumbs" id="breadcrumbs" role="menubar" aria-label="breadcrumb">
+                    <li role="menuitem"><a id="year-crumb" class="btn btn-sm" data-toggle="year" href="#">Year</a>
+                    </li>
+                    <li role="menuitem"><a id="make-crumb" class="btn btn-sm" data-toggle="make" href="#">Make</a>
+                    </li>
+                    <li role="menuitem"><a id="model-crumb" class="btn btn-sm" data-toggle="model" href="#">Model</a>
+                    </li>
+                    <li role="menuitem"><a id="edition-crumb" class="btn btn-sm" data-toggle="edition" href="#">Edition</a>
+                    </li>
+                  </ul>
+                  <!--------------------------BREADCRUMB END------------------------->
+                </div>
+                <div class="col-md-12">
+                  <div class="dropdown">
+                    <form>
+                      <select id="year" name="year">
+                        <option value="2015">Year</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                      </select>
+                      <select id="make" name="make">
+                        <option value="Make">Make</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Tesla">Tesla</option>
+                        <option value="Acura">Acura</option>
+                        <option value="Chevy">Chevy</option>
+                        <option value="BMW">BMW</option>
+                      </select>
+                      <select id="model" name="model">
+                        <option value="Model">Model</option>
+                        <option value="Accord">Accord</option>
+                        <option value="CRV">CRV</option>
+                        <option value="Pilot">Pilot</option>
+                        <option value="XRV">XRV</option>
+                        <option value="Odyssey">Odyssey</option>
+                        <option value="SXV">SXV</option>
+                      </select>
+                      <select id="edition" name="edition">
+                        <option value="Edition">Edition</option>
+                        <option value="SX">SX</option>
+                        <option value="LX">LX</option>
+                        <option value="FX">FX</option>
+                        <option value="EX">EX</option>
+                        <option value="Hybrid">Hybrid</option>
+                        <option value="Electric">Electric</option>
+                      </select>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-default btn-sm modal-btn" data-category="modal">Save</button>
+              <button type="button" class="btn btn-default btn-sm modal-btn" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------------------------MY VEHICLES END------------------------>
 <!---------------------------------NAVBAR END------------------------------------->
 <!---------------------------------CAROUSEL BEGIN------------------------------------->
 <div id="main-carousel" class="carousel slide" data-ride="carousel">
@@ -69,26 +147,53 @@
 
     <div class="item active">
       <img class="first-slide img-responsive" src="images/steering-wheel.jpg" alt="first-slide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Search</h1>
-          <p>Search for what your looking for</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Search</a>
-          </p>
+      <form class="col-sm-12">
+        <div class="form-group col-md-4 col-md-offset-4 carousel-search-form-group">
+          <div class="input-group input-group-lg center-block carousel-search-input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <button type="submit" class="btn">Search</button>
+            <!--<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>-->
+          </div>
         </div>
-      </div>
+      </form>
     </div>
 
     <div class="item">
       <img class="second-slide img-responsive" src="images/classic-car-dark.jpg" alt="second-slide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Sign Up</h1>
-          <p>Sign up.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
-          </p>
+      <section id="form">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-1">
+              <div class="login-form">
+                <h2>Login to your account</h2>
+                <form action="#">
+                  <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email Address" />
+							<span>
+								<input type="checkbox" class="checkbox">
+								Keep me signed in
+							</span>
+                  <button type="submit" class="btn btn-default">Login</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-sm-1">
+              <h2 class="or">OR</h2>
+            </div>
+            <div class="col-sm-4">
+              <div class="signup-form">
+                <h2>New User Signup!</h2>
+                <form action="#">
+                  <input type="text" placeholder="Name"/>
+                  <input type="email" placeholder="Email Address"/>
+                  <input type="password" placeholder="Password"/>
+                  <button type="submit" class="btn btn-default">Signup</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <div class="item">
@@ -116,11 +221,14 @@
 </div>
 <!---------------------------------CAROUSEL END------------------------------------->
 <!---------------------------------VIDEO SECTION BEGIN------------------------------------->
-<div class="container-fluid">
+<div class="container-fluid video-carousel-description">
   <div class="row">
     <div class="col-md-12">
       <h2 class="text-center">Find videos</h2>
-      <p class="text-center">Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+      <p class="text-center">Text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text
+        text text text text text text text text</p>
     </div>
   </div>
 </div>
@@ -132,7 +240,7 @@
         <div id="myCarousel" class="video-carousel fdi-Carousel slide">
           <!-- Carousel items -->
           <div class="video-carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
-            <div class="carousel-inner onebyone-carosel video-carousel-inner">
+            <div class="carousel-inner onebyone-carosel video-carousel-inner video-carousel-body">
               <div class="item active">
                 <!--------------VIDEO 1------------------>
                 <div class="item">
@@ -195,7 +303,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <div class="col-md-6">
+      <div class="col-md-6 descriptor-text">
         <h3 class="text-center">Manuals</h3>
         <p class="text-center">Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.</p>
       </div>
@@ -212,7 +320,7 @@
       <div class="col-md-6">
         <img class="img-responsive center-block img-circle" src="images/wire-car.jpg" alt="manuals">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 descriptor-text">
         <h3 class="text-center">Diagrams</h3>
         <p class="text-center">Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.</p>
       </div>
@@ -223,12 +331,12 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <div class="col-md-6">
+      <div class="col-md-6 descriptor-text">
         <h3 class="text-center">Parts</h3>
         <p class="text-center">Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.</p>
       </div>
       <div class="col-md-6">
-        <img class="img-responsive center-block img-circle" src="images/engine-front.jpg" alt="manuals">
+        <img class="img-responsive center-block img-circle" src="images/car-rex.jpg" alt="manuals">
       </div>
     </div>
   </div>
@@ -238,9 +346,9 @@
   <div class="row">
     <div class="col-md-12">
       <div class="col-md-6">
-        <img class="img-responsive center-block img-circle" src="images/car-rex.jpg" alt="manuals">
+        <img class="img-responsive center-block img-circle" src="images/engine-front.jpg" alt="manuals">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 descriptor-text">
         <h3 class="text-center">Information</h3>
         <p class="text-center">Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.Stuff about manuals. Stuff about manuals. Stuff about manuals. Stuff about manuals.</p>
       </div>
@@ -259,7 +367,6 @@
         <div class="form-group signup-form-group">
           <div class="col-md-4 col-md-offset-8">
             <div class="input-group">
-              <!--<span class="input-group-addon">E-mail:</span>-->
               <label>E-mail:</label>
               <input type="text" class="form-control" id="email-form" placeholder="E-mail" aria-describedby="email-form">
             </div>
@@ -269,9 +376,8 @@
         <div class="form-group signup-form-group">
           <div class="col-md-4 col-md-offset-8">
             <div class="input-group">
-              <!--<span class="input-group-addon">Password:</span>-->
               <label>Password:</label>
-              <input type="text" class="form-control" id="password-form" placeholder="Password" aria-describedby="email-form">
+              <input type="text" class="form-control" id="password-form" placeholder="Password" aria-describedby="password-form">
             </div>
           </div>
         </div>
@@ -294,10 +400,11 @@
 <!---------------------------------FOOTER BEGIN------------------------------------->
 <footer class="footer">
   <div class="container">
-    <a class="navbar-brand" href="#">Smart-Auto</a>
+    <a class="navbar-brand" href="#"><span class="logo-span">Smart</span>-Auto</a>
   </div>
 </footer>
 <!---------------------------------FOOTER END------------------------------------->
+<script src="js/auto.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

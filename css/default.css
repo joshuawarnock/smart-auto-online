@@ -10,7 +10,6 @@ html {
     min-height: 100%;
 }
 body {
-    /* Margin bottom by footer height */
     margin-bottom: 60px;
 }
 .navbar{
@@ -19,27 +18,103 @@ body {
 }
 .navbar, .navbar a{
     font-family: space;
+    color: #25C9FF !important;
+}
+.navbar a:hover{
+    color: #FE980F !important;
 }
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
     height: 60px;
     background-color: #1A1A1A;
+    font-family: space;
 }
+.logo-span{
+    color: #FE980F;
+}
+/***************************BREADCRUMBS BEGIN*************************/
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#breadcrumbs{
+    background: #eee;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f5f5f5 #e5e5e5 #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    overflow: hidden;
+    width: 100%;
+}
+#breadcrumbs li{
+    float: left;
+}
+#breadcrumbs a{
+    padding: .7em 1em .7em 2em;
+    float: left;
+    text-decoration: none;
+    color: #444;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    background-color: #ddd;
+    background-image: linear-gradient(to right, #f5f5f5, #ddd);
+}
+#breadcrumbs li:first-child a{
+    padding-left: 1em;
+    border-radius: 5px 0 0 5px;
+}
+#breadcrumbs a:hover{
+    background: #fff;
+}
+#breadcrumbs a::after,
+#breadcrumbs a::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    border-left: 1em solid;
+    right: -1em;
+}
+#breadcrumbs a::after{
+    z-index: 2;
+    border-left-color: #ddd;
+}
+#breadcrumbs a::before{
+    border-left-color: #ccc;
+    right: -1.1em;
+    z-index: 1;
+}
+#breadcrumbs a:hover::after{
+    border-left-color: #fff;
+}
+#breadcrumbs .current,
+#breadcrumbs .current:hover{
+    font-weight: bold;
+    background: none;
+}
+#breadcrumbs .current::after,
+#breadcrumbs .current::before{
+    content: normal;
+}
+/***************************BREADCRUMBS END*************************/
 /***********************************************************************************************************************
 ************************************************MAIN CAROUSEL***********************************************************
 ***********************************************************************************************************************/
 .carousel {
-    height: 760px;
-    margin-bottom: 60px;
+    height: 725px;
+    /*margin-bottom: 60px;*/
 }
 .carousel-caption {
     z-index: 10;
 }
 .carousel .item {
-    height: 760px;
+    height: 725px;
     background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -47,7 +122,7 @@ body {
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 760px;
+    height: 725px;
 }
 .carousel-caption p {
     margin-bottom: 20px;
@@ -55,18 +130,105 @@ body {
     line-height: 1.4;
 }
 /***********************************************************************************************************************
+**************************************************SEARCH SLIDE**********************************************************
+***********************************************************************************************************************/
+.carousel-search-form-group{
+    top: 300px;
+}
+.carousel-search-input-group{
+    display: inline-block !important;
+}
+/***********************************************************************************************************************
+**************************************************LOGIN SLIDE***********************************************************
+***********************************************************************************************************************/
+#form {
+    display: block;
+    overflow: hidden;
+}
+.login-form h2, .signup-form h2 {
+    color: #696763;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.login-form form input, .signup-form form input {
+    background: #F0F0E9;
+    border: medium none;
+    color: #696763;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    height: 40px;
+    margin-bottom: 10px;
+    outline: medium none;
+    padding-left: 10px;
+    width: 100%;
+}
+.login-form form span{
+    line-height: 25px;
+}
+.login-form form span input {
+    width: 15px;
+    float: left;
+    height: 15px;
+    margin-right: 5px;
+}
+.login-form form button {
+    margin-top: 23px;
+}
+.login-form form button, .signup-form form button {
+    background: #003BC4;
+    border: medium none;
+    border-radius: 0;
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    padding: 6px 25px;
+}
+.login-form form button:hover, .signup-form form button:hover {
+    background: #FE980F;
+    border: medium none;
+    border-radius: 0;
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    padding: 6px 25px;
+}
+.login-form label{
+
+}
+.login-form label input {
+    border: medium none;
+    display: inline-block;
+    height: 0;
+    margin-bottom: 0;
+    outline: medium none;
+    padding-left: 0;
+}
+.or{
+    background: #003BC4;
+    border-radius: 40px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 75px;
+    text-align: center;
+    width: 50px;
+}
+/***********************************************************************************************************************
 ***********************************************VIDEO CAROUSEL***********************************************************
 ***********************************************************************************************************************/
-
-
+.video-carousel-description, .video-carousel-body{
+    background-color: #25C9FF !important;
+}
 #vid-container{
     padding:0px 0px 0px 0px !important;
     margin:0px 0px 0px 0px !important;
     width:100%;
-}
-.video-carousel{
-    /*background-color: #003BC4;*/
-    /*background: linear-gradient(to left, #637379, white, #637379);*/
 }
 .well{
     margin-bottom: 0px !important;
@@ -92,9 +254,9 @@ body {
 /***********************************************************************************************************************
 **************************************************DESCRIPTORS***********************************************************
 ***********************************************************************************************************************/
-
-
-
+.descriptor-text{
+    margin-top: 50px;
+}
 /***********************************************************************************************************************
 ****************************************************SIGNUP**************************************************************
 ***********************************************************************************************************************/
@@ -117,5 +279,51 @@ body {
 }
 .submit-button{
     background-color: transparent;
-    color:#878787;
+    color: #878787;
 }
+
+.profile-image{
+    height: 250px;
+    width: 200px;
+}
+#profile-content{
+    margin-top: 40px;
+}
+#profile-tab, #vehicles-projects-tab, #friends-tab, #photos-tab{
+    padding-top: 90px;
+    margin-top: -90px;
+}
+#friends-tab{
+    box-sizing: border-box;
+}
+#friends-tab ul li{
+    width: auto;
+    min-width: 180px;
+    border: 1px solid #e9ebec;
+    background: #f7f7f8;
+    float: left;
+    padding: 5px;
+    margin: 5px 0 5px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#friends-tab ul li div{
+    text-align: center;
+}
+.avatar img{
+    height: 50px;
+    width: 40px;
+}
+.friends-list li .avatar{
+    float: left;
+}
+#photos-tab div{
+    display: inline-block;
+}
+#photo-thumbnail{
+    width:150px;
+    height:175px;
+    margin: 5px 5px 5px 0px;
+}
+
+

@@ -1,0 +1,85 @@
+Write a 3 sentence introduction of yourself.
+
+Example:
+* Graduated from some school.
+* Worked previously as a something
+* Have X background in coding before this bootcamp.
+
+Why are you learning to code?
+I like to build things.
+
+Create a 10 item outline of what you plan to present.
+
+Example:
+* Why I choose this site idea.
+* The purpose of the website.
+* Color Choices (Why these colors fit my audience)
+* Font Choices (Why these fonts)
+* Layout (What am I trying to draw attention to on each page)
+* My code layout (Separate files for css and html)
+* Naming Conventions
+* Use of id's and classses as selectors
+* Order of CSS properties (positioning, box, style, typography)
+* Color: These colors are compliments. The color blue builds brand trust.
+
+
+1.  I graduated from the University of Oklahoma with a Bachelors in
+    Business Administration. I have worked as Analytics Consultant and have
+    a background in SQL, SAS, VBA, with limited R and Python programming languages.
+    I am learning to code because i enjoy solving problems and building
+    comprehensive solutions and tools.
+
+2.
+a. I was a poor college kid that had to do all my own work on a high
+   maintenance car i needed to get to school and work but needed more
+   time to find the information i needed to do the repair than it took to repair it.
+
+b. This website is to provide a single location for any resources any DIY'rs
+   need to work on their car.
+
+c. I chose blue to instill trust in the information provided and i chose orange
+   to add energy to the site and support the shopping aspect of the site so users
+   feel that staying on this site to shop would be economical and our prices are
+   competitive.
+
+d. I chose this futuristic space like font to support the name "Smart"-auto and
+   convey to the user that this is the new way to to access resources for their
+   projects the "Automotive resource website of the future" and trust the information
+   provided.
+
+e. Im trying to draw attention to the features that get the users to the resources
+   they need (search bar, vehicle selector, video area).
+
+f. I like to bea able to easily see my code by breaking it up into sections so i can
+   easily see the individual sections from the mini map and then quickly locate it
+   in the editor window.
+
+g. I kept my naming conventions similar to bootstrap but specifically descriptive to its
+   area and function.
+
+h. I used mainly classes because most of my features will have reusable parts that i will
+   use later in my code and only used ids only for specific features such as my modal.
+
+i. I split my CSS code into the main css that effects all or many pages and areas.
+   Then broke my code into their individual pages and then the individual areas in a page.
+   Starting with the most important or encompassing elements and then narrow down as needed.
+
+j. My colors are complements and instill trust in the information and an economical feeling
+   for purchasing.
+
+
+
+
+
+
+
+I chose to build this automotive
+resource site because i grew up without the money to pay other people
+to do things for me. I always had to find my own solution to a problem
+and complete it my self, so if i didnt know how to do something or know
+enough to even start working on a solution i had to learn and learn quickly.
+This was never more evident than when i was in college and i was my poorest,
+and this was also the time where i relied on my vehicle the most. I needed my
+car to get to school and then to get to work. Without my car i would not have
+been able to do either. I had an old Chrysler LHS sedan that always needed a lot
+of work and maintenance to keep it running.
