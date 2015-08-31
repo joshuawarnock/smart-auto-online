@@ -14,6 +14,7 @@ body {
 }
 h1,h2,h3{
     font-family: space !important;
+    /*color: #FFFFFF !important;*/
     color: #25BBFF !important;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -29,6 +30,7 @@ button{
 }
 .navbar, .navbar a{
     font-family: space;
+    /*color: #FFFFFF !important;*/
     color: #25BBFF !important;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -120,33 +122,33 @@ ul{
 ************************************************PARALLAX SECTION********************************************************
 ***********************************************************************************************************************/
 #video-carousel-section{
-    background-image: url("../images/tire-tred-edit.jpeg");
+    background-image: url("../images/race-day-bw.jpg");
     height: 300px;
 }
 #descriptor-section{
     background-image: url("../images/white-wool.jpg");
 }
 .descriptor-section{
-    height: 500px;
+    height: 1200px;
 }
 .descriptor-separator-section-one{
-    background-image: url("../images/race-day-bw.jpg");
+    background-image: url("../images/race-day-bw-crop-darker.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0px;
-    height: 500px;
+    height: 300px;
 }
 .descriptor-separator-section-two{
-    background-image: url("../images/race-car-bw.jpg");
+    background-image: url("../images/turbo-car-bw.jpg");
     background-position: 50% 0px;
-    height: 500px;
+    height: 300px;
 }
 .descriptor-text{
-    margin-top: 15%;
+    margin-top: 5%;
 }
 .descriptor-icon{
-    max-height: 300px;
-    max-width: 300px;
-    margin-top: 20%;
+    height: 250px;
+    width: 250px;
+    margin-top: 5%;
 }
 /***********************************************************************************************************************
 ************************************************MAIN CAROUSEL***********************************************************
@@ -178,6 +180,7 @@ ul{
 .carousel-control{
     font-size: 15px;
     width: 10%;
+    color: #25BBFF;
 }
 .carousel-control.left{
     background-image: none;
@@ -189,7 +192,7 @@ ul{
 **************************************************SEARCH SLIDE**********************************************************
 ***********************************************************************************************************************/
 #carousel-search-container{
-    margin-top:50%;
+    margin-top:55%;
 }
 .carousel-search-heading{
     color: #25BBFF;
@@ -362,7 +365,7 @@ ul{
 ************************************************BOTTOM SIGNUP***********************************************************
 ***********************************************************************************************************************/
 .signup-container{
-    background-image: url("../images/guys-car-bw.jpg");
+    background-image: url("../images/guys-car-bw-crop-darker.jpg");
     background-repeat: no-repeat;
     height: 700px;
     width: auto;
@@ -373,18 +376,41 @@ ul{
     top: 30%;
 }
 .signup-form-group label{
-    color: #878787;
+    color: #FFFFFF;
+    font-family: space;
 }
 .email-form, .password-form, .username-form{
     background-color: transparent !important;
+    color: #FFFFFF;
+}
+.email-form::-webkit-input-placeholder,
+.password-form::-webkit-input-placeholder,
+.username-form::-webkit-input-placeholder{
+    ackground-color: transparent !important;
+    color: #FFFFFF;
+    font-family: space;
 }
 .submit-button{
     background-color: transparent !important;
-    color: #878787;
+    color: #FFFFFF;
 }
 /***********************************************************************************************************************
 ************************************************ACCOUNT PAGE***********************************************************
 ***********************************************************************************************************************/
+.account-container{
+    background-color: #E4E6E7;
+    width: 100%;
+}
+.account-tabs li{
+    border: solid #D5D5D5 1px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.tab-row{
+    border: solid #D5D5D5 1px;
+    background-color: #FFFFFF;
+}
+/*---------PROFILE TAB BEGIN-----------*/
 .profile-image{
     height: 250px;
     width: 200px;
@@ -396,12 +422,14 @@ ul{
     padding-top: 90px;
     margin-top: -90px;
 }
+/*---------PROFILE TAB END-----------*/
+/*---------FRIENDS TAB BEGIN-----------*/
 #friends-tab{
     box-sizing: border-box;
 }
 #friends-tab ul li{
     width: auto;
-    min-width: 180px;
+    min-width: 225px;
     border: 1px solid #e9ebec;
     background: #f7f7f8;
     float: left;
@@ -414,19 +442,24 @@ ul{
     text-align: center;
 }
 .avatar img{
-    height: 50px;
-    width: 40px;
+    height: 80px;
+    width: 70px;
 }
+/*.friends-list li{*/
+   /*width: 200px !important;*/
+/*}*/
 .friends-list li .avatar{
     float: left;
 }
+/*---------FRIENDS TAB END-----------*/
+/*---------PHOTOS TAB BEGIN-----------*/
 #photos-tab div{
     display: inline-block;
 }
 #photo-thumbnail{
-    width:150px;
+    width:140px;
     height:175px;
     margin: 5px 5px 5px 0px;
 }
-
+/*---------PHOTOS TAB END-----------*/
 

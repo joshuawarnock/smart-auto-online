@@ -71,6 +71,9 @@ $(document).ready(function () {
   });
 });
 
+
+
+
 //$(document).ready(function() {
 //  if($('#carmap')) {
 //    $('#carmap area').each(function() {
