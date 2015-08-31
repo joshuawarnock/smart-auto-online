@@ -42,12 +42,12 @@ $('#front-elec').change( function(){
   frontCrumb.text = selectedFront;
 });
 
-// Account Profile tabs control
-$(document).ready(function(){
-  $(".nav-tabs a").click(function(){
-    $(this).tab('show');
-  });
-});
+//// Account Profile tabs control
+//$(document).ready(function(){
+//  $(".nav-tabs a").click(function(){
+//    $(this).tab('show');
+//  });
+//});
 
 
 // Video Carousel

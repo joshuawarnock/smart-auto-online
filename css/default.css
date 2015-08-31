@@ -12,13 +12,25 @@ html {
 body {
     margin-bottom: 60px;
 }
+h1,h2,h3{
+    font-family: space !important;
+    color: #25BBFF !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h4{
+    font-family: space !important;
+}
+button{
+    font-family: space !important;
+}
 .navbar{
     background-color: transparent;
     border: transparent;
 }
 .navbar, .navbar a{
     font-family: space;
-    color: #25C9FF !important;
+    color: #25BBFF !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .navbar a:hover{
     color: #FE980F !important;
@@ -103,18 +115,51 @@ ul{
     content: normal;
 }
 /***************************BREADCRUMBS END*************************/
+
+/***********************************************************************************************************************
+************************************************PARALLAX SECTION********************************************************
+***********************************************************************************************************************/
+#video-carousel-section{
+    background-image: url("../images/tire-tred-edit.jpeg");
+    height: 300px;
+}
+#descriptor-section{
+    background-image: url("../images/white-wool.jpg");
+}
+.descriptor-section{
+    height: 500px;
+}
+.descriptor-separator-section-one{
+    background-image: url("../images/race-day-bw.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    height: 500px;
+}
+.descriptor-separator-section-two{
+    background-image: url("../images/race-car-bw.jpg");
+    background-position: 50% 0px;
+    height: 500px;
+}
+.descriptor-text{
+    margin-top: 15%;
+}
+.descriptor-icon{
+    max-height: 300px;
+    max-width: 300px;
+    margin-top: 20%;
+}
 /***********************************************************************************************************************
 ************************************************MAIN CAROUSEL***********************************************************
 ***********************************************************************************************************************/
 .carousel {
-    height: 725px;
+    height: 700px;
     /*margin-bottom: 60px;*/
 }
 .carousel-caption {
     z-index: 10;
 }
 .carousel .item {
-    height: 725px;
+    height: 700px;
     background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -122,31 +167,62 @@ ul{
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 725px;
+    height: 700px;
 }
 .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
 }
+/**********CHANGING DEFAULT CAROUSEL CONTROLS************/
+.carousel-control{
+    font-size: 15px;
+    width: 10%;
+}
+.carousel-control.left{
+    background-image: none;
+}
+.carousel-control.right{
+    background-image: none;
+}
 /***********************************************************************************************************************
 **************************************************SEARCH SLIDE**********************************************************
 ***********************************************************************************************************************/
-.carousel-search-form-group{
-    top: 300px;
+#carousel-search-container{
+    margin-top:50%;
 }
-.carousel-search-input-group{
-    display: inline-block !important;
+.carousel-search-heading{
+    color: #25BBFF;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+    border-right:0;
+    box-shadow:0 0 0;
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.carousel-search-button{
+    padding: 0px 10px 0px 10px;
 }
 /***********************************************************************************************************************
 **************************************************LOGIN SLIDE***********************************************************
 ***********************************************************************************************************************/
-#form {
+#carousel-form {
     display: block;
     overflow: hidden;
 }
+.carousel-form-row{
+    margin-top: 17%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .login-form h2, .signup-form h2 {
-    color: #696763;
+    color: #F0F0E9;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -179,22 +255,24 @@ ul{
     margin-top: 23px;
 }
 .login-form form button, .signup-form form button {
-    background: #003BC4;
+    background: #25BBFF;
     border: medium none;
-    border-radius: 0;
+    border-radius: 5px;
     color: #FFFFFF;
     display: block;
     font-family: 'Roboto', sans-serif;
     padding: 6px 25px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .login-form form button:hover, .signup-form form button:hover {
-    background: #FE980F;
+    background: #25BBFF;
     border: medium none;
-    border-radius: 0;
+    border-radius: 5px;
     color: #FFFFFF;
     display: block;
     font-family: 'Roboto', sans-serif;
     padding: 6px 25px;
+    text-shadow: 0px 0 black, 0 0px black, 0px 0 black, 0 0px black;
 }
 .login-form label{
 
@@ -208,7 +286,7 @@ ul{
     padding-left: 0;
 }
 .or{
-    background: #003BC4;
+    background-color: transparent;
     border-radius: 40px;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
@@ -220,11 +298,34 @@ ul{
     width: 50px;
 }
 /***********************************************************************************************************************
+********************************************+******SHOP SLIDE***********************************************************
+***********************************************************************************************************************/
+.carousel-shop-container{
+    margin-bottom: 20%;
+}
+.carousel-shop-button{
+    background: #25BBFF;
+    border: medium none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    padding: 6px 25px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+}
+.carousel-shop-button:hover{
+    background: #25BBFF;
+    border: medium none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    padding: 6px 25px;
+    text-shadow: 0px 0 black, 0 0px black, 0px 0 black, 0 0px black !important;
+}
+/***********************************************************************************************************************
 ***********************************************VIDEO CAROUSEL***********************************************************
 ***********************************************************************************************************************/
-.video-carousel-description, .video-carousel-body{
-    background-color: #25C9FF !important;
-}
 #vid-container{
     padding:0px 0px 0px 0px !important;
     margin:0px 0px 0px 0px !important;
@@ -254,14 +355,14 @@ ul{
 /***********************************************************************************************************************
 **************************************************DESCRIPTORS***********************************************************
 ***********************************************************************************************************************/
-.descriptor-text{
-    margin-top: 50px;
-}
+
+
+
 /***********************************************************************************************************************
-****************************************************SIGNUP**************************************************************
+************************************************BOTTOM SIGNUP***********************************************************
 ***********************************************************************************************************************/
 .signup-container{
-    background-image: url("../images/driveway-car.jpg");
+    background-image: url("../images/guys-car-bw.jpg");
     background-repeat: no-repeat;
     height: 700px;
     width: auto;
@@ -274,14 +375,16 @@ ul{
 .signup-form-group label{
     color: #878787;
 }
-#email-form, #password-form{
-    background-color: transparent;
+.email-form, .password-form, .username-form{
+    background-color: transparent !important;
 }
 .submit-button{
-    background-color: transparent;
+    background-color: transparent !important;
     color: #878787;
 }
-
+/***********************************************************************************************************************
+************************************************ACCOUNT PAGE***********************************************************
+***********************************************************************************************************************/
 .profile-image{
     height: 250px;
     width: 200px;
