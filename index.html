@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,9 +15,6 @@
 <!---------------------------------NAVBAR BEGIN------------------------------------->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
-
-
-
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -30,27 +26,18 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse pull-right">
       <ul class="nav navbar-nav navbar-collapse">
-
-        <li><a href="#" class="btn-link" data-toggle="modal" data-target="#myModal"><i class="fa fa-star fa-spin"></i> My Vehicles</a>
-        </li>
-
+        <li><a href="#" class="btn-link" data-toggle="modal" data-target="#myModal"><i class="fa fa-cog fa-spin"></i> My Vehicles</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog fa-spin"></i> Account<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-star fa-spin"></i> Account<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="account.html">My Account</a>
-            </li>
-            <li><a href="#" class="btn-link" data-toggle="modal" data-target="#myModal">My Vehicles</a>
-            </li>
-            <li><a href="#">My Library</a>
-            </li>
-            <li><a href="#">My Watchlist</a>
-            </li>
+            <li><a href="account.html">My Account</a></li>
+            <li><a href="#" class="btn-link" data-toggle="modal" data-target="#myModal">My Vehicles</a></li>
+            <li><a href="#">My Library</a></li>
+            <li><a href="#">My Watchlist</a></li>
             <li role="separator" class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a>
-            </li>
-            <li><a href="#">One more separated link</a>
-            </li>
+            <li class="dropdown-header">My Shop</li>
+            <li><a href="#">My Wishlist</a></li>
+            <li><a href="#">My Cart</a></li>
           </ul>
         </li>
       </ul>
@@ -64,30 +51,25 @@
       <!------------------------MY VEHICLE WINDOW BEGIN------------------------->
       <div id="myModal" class="modal fade" role="form" aria-labelledby="gridSystemModalLabel">
         <div class="modal-body">
-          <div class="modal-content container-fluid">
+          <div class="modal-content container-fluid modal-area">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title">Select Vehicle</h4>
             </div>
-
             <div class="modal-body">
               <div class="row">
                 <div class="col-md-12">
                   <!--------------------------BREADCRUMB BEGIN------------------------->
                   <ul class="btn-group btn-breadcrumbs" id="breadcrumbs" role="menubar" aria-label="breadcrumb">
-                    <li role="menuitem"><a id="year-crumb" class="btn btn-sm" data-toggle="year" href="#">Year</a>
-                    </li>
-                    <li role="menuitem"><a id="make-crumb" class="btn btn-sm" data-toggle="make" href="#">Make</a>
-                    </li>
-                    <li role="menuitem"><a id="model-crumb" class="btn btn-sm" data-toggle="model" href="#">Model</a>
-                    </li>
-                    <li role="menuitem"><a id="edition-crumb" class="btn btn-sm" data-toggle="edition" href="#">Edition</a>
-                    </li>
+                    <li role="menuitem"><a id="year-crumb" class="btn btn-sm" data-toggle="year" href="#">Year</a></li>
+                    <li role="menuitem"><a id="make-crumb" class="btn btn-sm" data-toggle="make" href="#">Make</a></li>
+                    <li role="menuitem"><a id="model-crumb" class="btn btn-sm" data-toggle="model" href="#">Model</a></li>
+                    <li role="menuitem"><a id="edition-crumb" class="btn btn-sm" data-toggle="edition" href="#">Edition</a></li>
                   </ul>
                   <!--------------------------BREADCRUMB END------------------------->
                 </div>
                 <div class="col-md-12">
-                  <div class="dropdown">
+                  <div class="dropdown modal-dropdowns">
                     <form>
                       <select id="year" name="year">
                         <option value="2015">Year</option>
@@ -150,31 +132,25 @@
       <li data-target="#main-carousel" data-slide-to="1"></li>
       <li data-target="#main-carousel" data-slide-to="2"></li>
     </ol>
-
     <div class="carousel-inner" role="listbox">
-
       <div class="item active slide-one">
-        <img class="first-slide img-responsive" src="images/steering-wheel.jpg" alt="first-slide">
+        <img class="first-slide img-responsive" src="images/sunset-road.jpg" alt="first-slide">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
               <div id="carousel-search-container">
                 <h3 class="text-center carousel-search-heading">Find your fix.</h3>
-                <div class="input-group style-input-group">
+                <div class="input-group stylish-input-group">
                   <input type="text" class="form-control" placeholder="Search">
-                                    <span class="input-group-addon carousel-search-button">
-                      <button type="submit"><span class="glyphicon glyphicon-search"></span>
-                      </button>
-                                    </span>
+                  <span class="input-group-addon carousel-search-button"><button type="submit"><span class="glyphicon glyphicon-search"></span></button></span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div class="item slide-two">
-        <img class="second-slide img-responsive" src="images/muscle-car.jpg" alt="second-slide">
+        <img class="second-slide img-responsive" src="images/road-bridge.jpg" alt="second-slide">
         <section id="carousel-form">
           <div class="container">
             <div class="row carousel-form-row">
@@ -207,9 +183,8 @@
           </div>
         </section>
       </div>
-
       <div class="item slide-three">
-        <img class="second-slide img-responsive" src="images/race-car-bw-crop2.jpg" alt="third-slide">
+        <img class="second-slide img-responsive" src="images/road-less-traveled.jpg" alt="third-slide">
         <div class="container-fluid">
           <div class="row-fluid">
             <div class="col-md-4 col-md-offset-6 carousel-caption center-block carousel-shop-container">
@@ -222,12 +197,10 @@
         </div>
       </div>
     </div>
-
     <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-
     <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
@@ -236,223 +209,142 @@
 </section>
 <!---------------------------------CAROUSEL END------------------------------------->
 <!---------------------------------VIDEO SECTION BEGIN------------------------------------->
-<section id="video-carousel-section" data-speed="10" data-type="background">
-  <div class="container-fluid video-section">
-    <div class="container-fluid video-carousel-description">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-center">Videos</h2>
-          <p class="text-center">Text text text text text text text text text text</p>
-        </div>
-      </div>
-    </div>
-    <!---------------------------------VIDEO CAROUSEL BEGIN------------------------------------->
-    <div class="container-fluid" id="vid-container">
-      <div class="row">
-        <div class="col-md-12">
 
-          <div>
-
-            <div id="myCarousel" class="video-carousel fdi-Carousel slide">
-              <!-- Carousel items -->
-              <div class="video-carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
-                <div class="carousel-inner onebyone-carosel video-carousel-inner video-carousel-body">
-                  <div class="item active">
-                    <!--------------VIDEO 1------------------>
-                    <div class="item">
-                      <div class="col-md-4 text-center">
-                        <iframe src="https://www.youtube.com/embed/rn5kQCg7yyo" frameborder="0" allowfullscreen id="vid-1"></iframe>
-                      </div>
-                    </div>
-                    <!--------------VIDEO 2------------------>
-                    <div class="item">
-                      <div class="col-md-4 text-center">
-                        <iframe src="https://www.youtube.com/embed/rn5kQCg7yyo" frameborder="0" allowfullscreen id="vid-2"></iframe>
-                      </div>
-                    </div>
-                    <!--------------VIDEO 3------------------>
-                    <div class="item">
-                      <div class="col-md-4 text-center">
-                        <iframe src="https://www.youtube.com/embed/rn5kQCg7yyo" frameborder="0" allowfullscreen id="vid-3"></iframe>
-                      </div>
-                    </div>
-                  </div>
-                  <!--------------VIDEO 4------------------>
-                  <div class="item">
-                    <div class="item">
-                      <div class="col-md-4 text-center">
-                        <iframe src="https://www.youtube.com/embed/rn5kQCg7yyo" frameborder="0" allowfullscreen id="vid-4"></iframe>
-                      </div>
-                    </div>
-                    <!--------------VIDEO 5------------------>
-                    <div class="item">
-                      <div class="col-md-4 text-center">
-                        <iframe src="https://www.youtube.com/embed/rn5kQCg7yyo" frameborder="0" allowfullscreen id="vid-5"></iframe>
-                      </div>
-                    </div>
-                    <!--------------VIDEO 6------------------>
-                    <div class="item">
-                      <div class="col-md-4 text-center">
-                        <iframe src="https://www.youtube.com/embed/rn5kQCg7yyo" frameborder="0" allowfullscreen id="vid-6"></iframe>
-                      </div>
-                    </div>
+<!---------------------------------VIDEO CAROUSEL BEGIN------------------------------------->
+<div class="container-fluid" id="vid-container">
+  <div class="row">
+    <div class="col-md-12">
+      <div>
+        <div id="myCarousel" class="video-carousel fdi-Carousel slide">
+          <!-- Carousel items -->
+          <div class="video-carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+            <div class="carousel-inner onebyone-carosel video-carousel-inner video-carousel-body">
+              <div class="item active">
+                <!--------------VIDEO 1------------------>
+                <div class="item">
+                  <div class="col-md-4 text-center">
+                    <iframe src="https://www.youtube.com/embed/3eEB34tVvBc" frameborder="0" allowfullscreen id="vid-1"></iframe>
                   </div>
                 </div>
-                <a class="left carousel-control" href="#eventCarousel" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-
-                <a class="right carousel-control" href="#eventCarousel" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-
-                </a>
+                <!--------------VIDEO 2------------------>
+                <div class="item">
+                  <div class="col-md-4 text-center">
+                    <iframe src="https://www.youtube.com/embed/TgtUDTFxOkQ" frameborder="0" allowfullscreen id="vid-2"></iframe>
+                  </div>
+                </div>
+                <!--------------VIDEO 3------------------>
+                <div class="item">
+                  <div class="col-md-4 text-center">
+                    <iframe src="https://www.youtube.com/embed/joBmbh0AGSQ" frameborder="0" allowfullscreen id="vid-3"></iframe>
+                  </div>
+                </div>
+              </div>
+              <!--------------VIDEO 4------------------>
+              <div class="item">
+                <div class="item">
+                  <div class="col-md-4 text-center">
+                    <iframe src="https://www.youtube.com/embed/RdXVxbd59es" frameborder="0" allowfullscreen id="vid-4"></iframe>
+                  </div>
+                </div>
+                <!--------------VIDEO 5------------------>
+                <div class="item">
+                  <div class="col-md-4 text-center">
+                    <iframe src="https://www.youtube.com/embed/gS0KAbdXG4Q" frameborder="0" allowfullscreen id="vid-5"></iframe>
+                  </div>
+                </div>
+                <!--------------VIDEO 6------------------>
+                <div class="item">
+                  <div class="col-md-4 text-center">
+                    <iframe src="https://www.youtube.com/embed/ssgfRvcq054" frameborder="0" allowfullscreen id="vid-6"></iframe>
+                  </div>
+                </div>
               </div>
             </div>
-
+            <a class="left carousel-control" href="#eventCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#eventCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-
         </div>
       </div>
     </div>
   </div>
-</section>
+</div>
+</div>
+
 <!---------------------------------VIDEO CAROUSEL END------------------------------------->
 <!---------------------------------DESCRIPTORS SECTION BEGIN------------------------------------>
 <section id="descriptor-section" data-speed="3" data-type="background">
-
   <!--------------------------PARALLAX DIVIDER BEGIN------------------------------>
   <section class="descriptor-separator-section-one" data-speed="5" data-type="background">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-
+          <br>
+          <br>
+          <h1 class="text-center link-text"><a class="main-link" href="#">Manuals</a></h1>
+          <br>
+          <br>
+          <h1 class="text-center link-text"><a class="main-link" href="#">Diagrams</a></h1>
+          <br>
+          <br>
+          <h1 class="text-center link-text"><a class="main-link" href="#">Information</a></h1>
+          <br>
+          <br>
+          <h1 class="text-center link-text"><a class="main-link" href="#">Parts</a></h1>
         </div>
       </div>
     </div>
   </section>
-  <!--------------------------PARALLAX DIVIDER END------------------------------>
-
-  <section class="descriptor-section">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="row">
-        <div class="col-md-6 descriptor-text">
-          <h1 class="text-center">Manuals</h1>
-        </div>
-        <div class="col-md-6">
-          <img class="center-block descriptor-icon" src="images/manuals-stack-icon-tran.png">
-        </div>
-        </div>
-
-        <div class="row">
-        <div class="col-md-6">
-          <img class="img-responsive center-block descriptor-icon" src="images/diagram-flow-icon-tran.png" alt="manuals">
-        </div>
-
-        <div class="col-md-6 descriptor-text">
-          <h1 class="text-center">Diagrams & Instrunctions</h1>
-        </div>
-        </div>
-
-        <div class="row">
-        <div class="col-md-6 descriptor-text">
-          <h1 class="text-center">Information</h1>
-        </div>
-
-        <div class="col-md-6">
-          <img class="img-responsive center-block descriptor-icon" src="images/gears-icon-tran.png" alt="information">
-        </div>
-        </div>
-
-          <div class="row">
-        <div class="col-md-6">
-          <img class="img-responsive center-block descriptor-icon" src="images/parts-service-icon-tran-blue.png" alt="manuals">
-        </div>
-
-          <div class="col-md-6 descriptor-text">
-            <h1 class="text-center">Parts</h1>
-          </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  </section>
-
-  <!--------------------------PARALLAX DIVIDER BEGIN------------------------------>
-  <section class="descriptor-separator-section-two" data-speed="5" data-type="background">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--------------------------PARALLAX DIVIDER END------------------------------>
-
-
-
 </section>
 <!---------------------------------DESCRIPTORS SECTION END------------------------------------>
-<!---------------------------------SIGNUP SECTION BEGIN------------------------------------>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
-
-      <div class="signup-container">
-
-        <div class="form-group signup-form-group">
-          <div class="col-md-4 col-md-offset-6">
-            <div class="input-group">
-              <label>E-mail:</label>
-              <input type="text" class="form-control email-form" placeholder="E-mail" aria-describedby="email-form">
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group signup-form-group">
-          <div class="col-md-4 col-md-offset-6">
-            <div class="input-group">
-              <label>Password:</label>
-              <input type="text" class="form-control password-form" placeholder="Password" aria-describedby="password-form">
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group signup-form-group">
-          <div class="col-md-4 col-md-offset-6">
-            <div class="input-group">
-              <br>
-              <button type="submit" class="btn btn-default submit-button">Submit</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<!---------------------------------SIGNUP SECTION END------------------------------------>
 <!---------------------------------FOOTER BEGIN------------------------------------->
 <footer class="footer">
   <div class="container">
-    <a class="navbar-brand" href="#"><span class="logo-span">Smart</span>-Auto</a>
+    <div class="row">
+      <nav class="col-md-12">
+        <div class="col-md-3">
+          <a class="navbar-brand" href="#"><span class="logo-span">Smart</span>-Auto</a>
+        </div>
+        <div class="col-md-3 footer-column text-center">
+          <h2>About</h2>
+          <ul>
+            <li><a class="footer-link" href="#">Mission Statement</a></li>
+            <li><a class="footer-link" href="#">History</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-column text-center">
+          <h2>My Vehicles</h2>
+          <ul>
+            <li><a class="footer-link" href="#">2015 Honda CRV</a></li>
+            <li><a class="footer-link" href="#">2009 Yamaha FZ1</a></li>
+            <li><a class="footer-link" href="#">2009 Honda Accord</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-column text-center">
+          <h2>Account</h2>
+          <ul>
+            <li><a class="footer-link" href="account.html">My Account</a></li>
+            <li><a class="btn-link footer-link" data-toggle="modal" data-target="#myModal">My Vehicles</a></li>
+            <li><a class="footer-link" href="#">My Library</a></li>
+            <li><a class="footer-link" href="#">My Watchlist</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </div>
 </footer>
 <!---------------------------------FOOTER END------------------------------------->
-<script src="js/auto.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/init.js"></script>
-
+<script src="js/auto.js"></script>
 </body>
-
 </html>

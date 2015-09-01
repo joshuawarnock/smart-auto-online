@@ -2,8 +2,8 @@
 ***************************************************MAIN CSS*************************************************************
 ***********************************************************************************************************************/
 @font-face {
-    font-family: space;
-    src: url('../fonts/space%20age.otf');
+    font-family: shop;
+    src: url('../fonts/shop.ttf');
 }
 html {
     position: relative;
@@ -13,23 +13,31 @@ body {
     margin-bottom: 60px;
 }
 h1,h2,h3{
-    font-family: space !important;
-    /*color: #FFFFFF !important;*/
-    color: #25BBFF !important;
+    font-family: shop !important;
+    color: #FFFFFF !important;
+    /*color: #25BBFF !important;*/
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 h4{
-    font-family: space !important;
+    font-family: shop !important;
+}
+h5{
+    color: #25BBFF;
+    font-family: shop !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h1 a{
+    color: #FFFFFF !important;
 }
 button{
-    font-family: space !important;
+    font-family: shop !important;
 }
 .navbar{
     background-color: transparent;
     border: transparent;
 }
 .navbar, .navbar a{
-    font-family: space;
+    font-family: shop;
     /*color: #FFFFFF !important;*/
     color: #25BBFF !important;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -37,13 +45,25 @@ button{
 .navbar a:hover{
     color: #FE980F !important;
 }
+.modal-area{
+    background-color: #EAEAEA;
+}
+.modal-dropdowns{
+    margin-top: 10px;
+}
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: auto;
     background-color: #1A1A1A;
-    font-family: space;
+    font-family: shop;
+}
+.footer-column{
+    margin-bottom: 10px;
+}
+.footer-column h2{
+    color: #25BBFF !important;
 }
 .logo-span{
     color: #FE980F;
@@ -117,30 +137,26 @@ ul{
     content: normal;
 }
 /***************************BREADCRUMBS END*************************/
-
 /***********************************************************************************************************************
 ************************************************PARALLAX SECTION********************************************************
 ***********************************************************************************************************************/
-#video-carousel-section{
-    background-image: url("../images/race-day-bw.jpg");
-    height: 300px;
-}
 #descriptor-section{
     background-image: url("../images/white-wool.jpg");
 }
 .descriptor-section{
-    height: 1200px;
+    height: 155px;
 }
 .descriptor-separator-section-one{
     background-image: url("../images/race-day-bw-crop-darker.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0px;
-    height: 300px;
+    height: 650px;
+    margin-bottom: 100px;
 }
 .descriptor-separator-section-two{
     background-image: url("../images/turbo-car-bw.jpg");
     background-position: 50% 0px;
-    height: 300px;
+    height: 155px;
 }
 .descriptor-text{
     margin-top: 5%;
@@ -154,14 +170,14 @@ ul{
 ************************************************MAIN CAROUSEL***********************************************************
 ***********************************************************************************************************************/
 .carousel {
-    height: 700px;
+    height: 800px;
     /*margin-bottom: 60px;*/
 }
 .carousel-caption {
     z-index: 10;
 }
 .carousel .item {
-    height: 700px;
+    height: 800px;
     background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -169,7 +185,7 @@ ul{
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 700px;
+    height: 800px;
 }
 .carousel-caption p {
     margin-bottom: 20px;
@@ -192,15 +208,22 @@ ul{
 **************************************************SEARCH SLIDE**********************************************************
 ***********************************************************************************************************************/
 #carousel-search-container{
-    margin-top:55%;
+    margin-top:65%;
 }
 .carousel-search-heading{
     color: #25BBFF;
 }
 .stylish-input-group .input-group-addon{
-    background: white !important;
+    background: transparent !important;
+}
+.stylish-input-group input::-webkit-input-placeholder{
+    color: #ffffff !important;
+}
+.input-group-addon{
+    color: #ffffff !important;
 }
 .stylish-input-group .form-control{
+    background: transparent;
     border-right:0;
     box-shadow:0 0 0;
     border-color:#ccc;
@@ -211,6 +234,7 @@ ul{
 }
 .carousel-search-button{
     padding: 0px 10px 0px 10px;
+    color: #ffffff;
 }
 /***********************************************************************************************************************
 **************************************************LOGIN SLIDE***********************************************************
@@ -220,7 +244,7 @@ ul{
     overflow: hidden;
 }
 .carousel-form-row{
-    margin-top: 17%;
+    margin-top: 20%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -232,8 +256,8 @@ ul{
     margin-bottom: 30px;
 }
 .login-form form input, .signup-form form input {
-    background: #F0F0E9;
-    border: medium none;
+    background: transparent;
+    border: solid #FFFFFF 2px;
     color: #696763;
     display: block;
     font-family: 'Roboto', sans-serif;
@@ -244,6 +268,9 @@ ul{
     outline: medium none;
     padding-left: 10px;
     width: 100%;
+}
+.login-form form input::-webkit-input-placeholder, .signup-form form input::-webkit-input-placeholder {
+    color: #ffffff;
 }
 .login-form form span{
     line-height: 25px;
@@ -329,6 +356,10 @@ ul{
 /***********************************************************************************************************************
 ***********************************************VIDEO CAROUSEL***********************************************************
 ***********************************************************************************************************************/
+#video-carousel-section{
+    background-image: url("../images/white-wool.jpg");
+    height: 155px;
+}
 #vid-container{
     padding:0px 0px 0px 0px !important;
     margin:0px 0px 0px 0px !important;
@@ -358,16 +389,16 @@ ul{
 /***********************************************************************************************************************
 **************************************************DESCRIPTORS***********************************************************
 ***********************************************************************************************************************/
-
-
-
+.link-text{
+    font-size: 72px;
+}
 /***********************************************************************************************************************
 ************************************************BOTTOM SIGNUP***********************************************************
 ***********************************************************************************************************************/
 .signup-container{
     background-image: url("../images/guys-car-bw-crop-darker.jpg");
     background-repeat: no-repeat;
-    height: 700px;
+    height: 600px;
     width: auto;
     position: static;
 }
@@ -386,7 +417,7 @@ ul{
 .email-form::-webkit-input-placeholder,
 .password-form::-webkit-input-placeholder,
 .username-form::-webkit-input-placeholder{
-    ackground-color: transparent !important;
+    background-color: transparent !important;
     color: #FFFFFF;
     font-family: space;
 }
@@ -398,8 +429,10 @@ ul{
 ************************************************ACCOUNT PAGE***********************************************************
 ***********************************************************************************************************************/
 .account-container{
-    background-color: #E4E6E7;
+    /*background-color: #1A1A1A;*/
+    background-color: grey;
     width: 100%;
+    margin-bottom: 150px;
 }
 .account-tabs li{
     border: solid #D5D5D5 1px;
@@ -408,7 +441,10 @@ ul{
 }
 .tab-row{
     border: solid #D5D5D5 1px;
-    background-color: #FFFFFF;
+    background-color: white;
+}
+.account-heading{
+    color: #25BBFF !important;
 }
 /*---------PROFILE TAB BEGIN-----------*/
 .profile-image{
@@ -418,7 +454,10 @@ ul{
 #profile-content{
     margin-top: 40px;
 }
-#profile-tab, #vehicles-projects-tab, #friends-tab, #photos-tab{
+#profile-tab,
+#vehicles-projects-tab,
+#friends-tab,
+#photos-tab{
     padding-top: 90px;
     margin-top: -90px;
 }

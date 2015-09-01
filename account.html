@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta name="description" content="A search tool for amateur mechanics who want to repair their car.">
   <meta name="author" content="">
   <title>Home | Smart-Auto-Online</title>
@@ -16,9 +14,6 @@
 <!---------------------------------NAVBAR BEGIN------------------------------------->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
-
-    <body>
-
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -30,21 +25,18 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse pull-right">
       <ul class="nav navbar-nav navbar-collapse">
-
-
-        <li><a href="#" class="btn-link" data-toggle="modal" data-target="#myModal"><i class="fa fa-star fa-spin"></i> My Vehicles</a></li>
-
+        <li><a href="#" class="btn-link" data-toggle="modal" data-target="#myModal"><i class="fa fa-cog fa-spin"></i> My Vehicles</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog fa-spin"></i> Account<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-star fa-spin"></i> Account<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="account.html">My Account</a></li>
-            <li><a href="#">My Vehicles</a></li>
+            <li><a href="#" class="btn-link" data-toggle="modal" data-target="#myModal">My Vehicles</a></li>
             <li><a href="#">My Library</a></li>
             <li><a href="#">My Watchlist</a></li>
             <li role="separator" class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
+            <li class="dropdown-header">My Shop</li>
+            <li><a href="#">My Wishlist</a></li>
+            <li><a href="#">My Cart</a></li>
           </ul>
         </li>
       </ul>
@@ -58,12 +50,11 @@
       <!------------------------MY VEHICLE WINDOW BEGIN------------------------->
       <div id="myModal" class="modal fade" role="form" aria-labelledby="gridSystemModalLabel">
         <div class="modal-body">
-          <div class="modal-content container-fluid">
+          <div class="modal-content container-fluid modal-area">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title">Select Vehicle</h4>
             </div>
-
             <div class="modal-body">
               <div class="row">
                 <div class="col-md-12">
@@ -77,7 +68,7 @@
                   <!--------------------------BREADCRUMB END------------------------->
                 </div>
                 <div class="col-md-12">
-                  <div class="dropdown">
+                  <div class="dropdown modal-dropdowns">
                     <form>
                       <select id="year" name="year">
                         <option value="2015">Year</option>
@@ -132,6 +123,7 @@
 </div>
 <!---------------------------MY VEHICLES END------------------------>
 <!---------------------------------NAVBAR END------------------------------------->
+<!---------------------------------NAVBAR END------------------------------------->
 <!---------------------------------NAVTABS BEGIN------------------------------------->
 <div class="container account-container">
   <div class="row">
@@ -143,26 +135,16 @@
               <img class="profile-image" src="images/blank-profile.jpg">
             </div>
             <div class="col-xs-5 col-sm-12">
-              <h3>General Information</h3>
+              <h3 class="account-heading">General Information</h3>
               <ul class="profile-details">
-                <li>
-                  <div><i class="fa fa-user"></i> Username</div>
-                </li>
-                <li>
-                  <div><i class="fa fa-building-o"></i> Occupation</div>
-                </li>
-                <li>
-                  <div><i class="fa fa-clock-o"></i> Member Since</div>
-                </li>
+                <li><div><i class="fa fa-user"></i> Username</div></li>
+                <li><div><i class="fa fa-building-o"></i> Occupation</div></li>
+                <li><div><i class="fa fa-clock-o"></i> Member Since</div></li>
               </ul>
-              <h3>Contact Information</h3>
+              <h3 class="account-heading">Contact Information</h3>
               <ul class="profile-details">
-                <li>
-                  <div><i class="fa fa-envelope"></i> e-mail</div>
-                </li>
-                <li>
-                  <div><i class="fa fa-map-marker"></i> City, State</div>
-                </li>
+                <li><div><i class="fa fa-envelope"></i> e-mail</div></li>
+                <li><div><i class="fa fa-map-marker"></i> City, State</div></li>
               </ul>
             </div>
           </div>
@@ -175,313 +157,343 @@
             <li><a data-toggle="tab" href="#friends-tab">Friends</a></li>
             <li><a data-toggle="tab" href="#photos-tab">Photos</a></li>
           </ul>
-          <div class="tab-content">
-
+          <div class="tab-content all-tabs-content">
+            <!-----------------------------------------------------------------PROFILE TAB BEGIN------------------------------->
             <div id="profile-tab" class="tab-pane active">
               <div class="row tab-row">
                 <div class="col-md-5">
-                  <h2>About Me</h2>
+                  <h2 class="account-heading">About Me</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <h2>Job</h2>
+                  <h2 class="account-heading">Job</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   <div class="row">
                   </div>
                 </div>
                 <div class="col-md-7">
-                  <h2>My Skills</h2>
+                  <h2 class="account-heading">My Skills</h2>
                   <ul class="skill-bar">
                     <li>
                       <h5>Bearing Replacement</h5>
-                      <div>'99 Honda Accord</div>
+                      <p>'99 Honda Accord</p>
                     </li>
                     <li>
                       <h5>Oil Change</h5>
-                      <div>'99 Honda Accord</div>
-                      <div>'15 Honda CRV</div>
+                      <p>'99 Honda Accord</p>
+                      <p>'15 Honda CRV</p>
                     </li>
                     <li>
                       <h5>Spark Plug Replacement</h5>
-                      <div>'09 Yamaha FZ1</div>
+                      <p>'09 Yamaha FZ1</p>
                     </li>
                   </ul>
-                  <h2>Other Skills</h2>
+                  <h2 class="account-heading">Other Skills</h2>
                   <canvas id="canvas" class="chartjs" height="450" width="450"></canvas>
                 </div>
               </div>
             </div>
-
+            <!-----------------------------------------------------------------PROFILE TAB END--------------------------------->
             <div class="tab-pane" id="vehicles-projects-tab">
               <div class="row tab-row">
                 <div class="col-md-5">
-                  <h2>My First Project</h2>
+                  <h2 class="account-heading">My First Project</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <h2>My Best Project</h2>
+                  <h2 class="account-heading">My Best Project</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <h2>My Hardest Project</h2>
+                  <h2 class="account-heading">My Hardest Project</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   <div class="row">
                   </div>
                 </div>
                 <div class="col-md-7">
-                  <h2>My Vehicles</h2>
+                  <h2 class="account-heading">My Vehicles</h2>
                   <ul class="vehicles-bar">
                     <li>
-                      <div>'99 Honda Accord</div>
+                      <p>'99 Honda Accord</p>
                     </li>
                     <li>
-                      <!--<h5>Oil Change</h5>-->
-                      <!--<div>'99 Honda Accord</div>-->
-                      <div>'15 Honda CRV</div>
+                      <p>'15 Honda CRV</p>
                     </li>
                     <li>
-                      <!--<h5>Spark Plug Replacement</h5>-->
-                      <div>'09 Yamaha FZ1</div>
+                      <p>'09 Yamaha FZ1</p>
                     </li>
                   </ul>
-                  <h2>Other Projects</h2>
-                  <div>CV Joint Replacement</div>
+                  <h2 class="account-heading">Other Projects</h2>
+                  <p>CV Joint Replacement</p>
                   <canvas id="canvas" class="chartjs" height="450" width="450"></canvas>
                 </div>
               </div>
             </div>
-
             <div class="tab-pane" id="friends-tab">
               <div class="row tab-row">
                 <div class="col-md-12">
-              <ul class="friends-list list-inline">
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div id="friend-name">Luke Skywalker</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-success">active</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Roman Mars</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-warning">busy</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>May Linger</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Max Powers</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-default">offline</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li><li>
-                <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                <div>Mia Angelu</div>
-                <span class="label label-info">Info</span>
-                <span class="label label-danger">blocked</span>
-                <a href="#" class="fa fa-facebook-square"></a>
-                <a href="#" class="fa fa-twitter-square"></a>
-                <a href="#" class="fa fa-linkedin-square"></a>
-              </li><li>
-                <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                <div>Mia Angelu</div>
-                <span class="label label-info">Info</span>
-                <span class="label label-danger">blocked</span>
-                <a href="#" class="fa fa-facebook-square"></a>
-                <a href="#" class="fa fa-twitter-square"></a>
-                <a href="#" class="fa fa-linkedin-square"></a>
-              </li><li>
-                <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                <div>Mia Angelu</div>
-                <span class="label label-info">Info</span>
-                <span class="label label-danger">blocked</span>
-                <a href="#" class="fa fa-facebook-square"></a>
-                <a href="#" class="fa fa-twitter-square"></a>
-                <a href="#" class="fa fa-linkedin-square"></a>
-              </li><li>
-                <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                <div>Mia Angelu</div>
-                <span class="label label-info">Info</span>
-                <span class="label label-danger">blocked</span>
-                <a href="#" class="fa fa-facebook-square"></a>
-                <a href="#" class="fa fa-twitter-square"></a>
-                <a href="#" class="fa fa-linkedin-square"></a>
-              </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-                <li>
-                  <a class="avatar" href="#"><img src="images/blank-profile.jpg"></a>
-                  <div>Mia Angelu</div>
-                  <span class="label label-info">Info</span>
-                  <span class="label label-danger">blocked</span>
-                  <a href="#" class="fa fa-facebook-square"></a>
-                  <a href="#" class="fa fa-twitter-square"></a>
-                  <a href="#" class="fa fa-linkedin-square"></a>
-                </li>
-              </ul>
+                  <ul class="friends-list list-inline">
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div id="friend-name">Luke Skywalker</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-success">active</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Roman Mars</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-warning">busy</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>May Linger</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Max Powers</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-default">offline</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                    <li>
+                      <a class="avatar" href="#"><img src="images/blank-profile.jpg">
+                      </a>
+                      <div>Maya Angelou</div>
+                      <span class="label label-info">Info</span>
+                      <span class="label label-danger">blocked</span>
+                      <a href="#" class="fa fa-facebook-square"></a>
+                      <a href="#" class="fa fa-twitter-square"></a>
+                      <a href="#" class="fa fa-linkedin-square"></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-
             <div class="tab-pane" id="photos-tab">
               <div class="row tab-row">
                 <div class="col-md-12">
-                <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                </div>
-                <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                </div>
-                <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                </div>
-                <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                </div>
-                <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                </div>
-                <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                </div>
-                <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                </div>
-                <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
-                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg">
-                  </div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
+                  <div><img class="img-thumbnail" id="photo-thumbnail" src="images/blank-profile.jpg"></div>
                 </div>
               </div>
             </div>
@@ -495,16 +507,45 @@
 <!---------------------------------FOOTER BEGIN------------------------------------->
 <footer class="footer">
   <div class="container">
-    <a class="navbar-brand" href="#"><span class="logo-span">Smart</span>-Auto</a>
+    <div class="row">
+      <nav class="col-md-12">
+        <div class="col-md-3">
+          <a class="navbar-brand" href="#"><span class="logo-span">Smart</span>-Auto</a>
+        </div>
+        <div class="col-md-3 footer-column text-center">
+          <h2>About</h2>
+          <ul>
+            <li><a class="footer-link" href="#">Mission Statement</a></li>
+            <li><a class="footer-link" href="#">History</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-column text-center">
+          <h2>My Vehicles</h2>
+          <ul>
+            <li><a class="footer-link" href="#">2015 Honda CRV</a></li>
+            <li><a class="footer-link" href="#">2009 Yamaha FZ1</a></li>
+            <li><a class="footer-link" href="#">2009 Honda Accord</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-column text-center">
+          <h2>Account</h2>
+          <ul>
+            <li><a class="footer-link" href="account.html">My Account</a></li>
+            <li><a class="btn-link footer-link" data-toggle="modal" data-target="#myModal">My Vehicles</a></li>
+            <li><a class="footer-link" href="#">My Library</a></li>
+            <li><a class="footer-link" href="#">My Watchlist</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </div>
 </footer>
-<!---------------------------------FOOTER END------------------------------------->
-<script src="js/auto.js"></script>
+<!-------------FOOTER END------------------>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
-
+<script src="js/auto.js"></script>
 </body>
 
 </html>
